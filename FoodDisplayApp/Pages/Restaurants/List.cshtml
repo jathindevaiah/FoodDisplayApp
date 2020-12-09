@@ -1,0 +1,18 @@
+﻿@page
+@model ListModel
+@{
+}
+
+<h1>Restaurants</h1>
+<div>@Model.Message </div>
+
+<table class="table">
+    @foreach(var rest in Model.Restaurants)
+    {
+        <tr>
+            <td>@rest.Name</td>
+            <td>@rest.Location</td>
+            <td>@rest.Cuisine</td>
+        </tr>
+    }
+</table>
